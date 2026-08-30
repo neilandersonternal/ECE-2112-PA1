@@ -19,19 +19,17 @@ capitalization of every character.
 Example: 
 print (rotate_word("ECED")) >> CEDE (the E at the first, ends up in the last)
 
+The main function for this problem is:
 
-So, for the first thing that I did was to define the function with the name of "rotate_word". 
-After that, I used the return function in order to alter the value for the output. With the **return** function,
-I input "text[1] + text[0]" so that the output will start at the second letter while it will end with the
-supposedly first letter.
+● ```return``` - statement is used inside a function to send a value or result back to the code that called it.
+
+In this case I input "text[1] + text[0]" so that the output will start at the 
+second letter while it will end with the supposedly first letter.
 
 ```
 def rotate_word(text):
     return text [1:] + text[0]
 ```
-With that, the I've solved the first problem.
-
-
 
 
 # **B. Username Builder Problem**
@@ -44,12 +42,15 @@ function must:
 3. remove all spaces from the last name; and
 4. join the processed first and last names using one period (.).
 
+The following are the function that are mainly used for this problem: 
 
-First, create a user-defined function with "def", and as for the instruction that was indicated from our assignment,
-the name of the function should be "make_username". After that, to set the first name into lowercase, I added another name, for the
-first name itself, after that I used the **lower()** function in order to convert all uppercase characters in a string into lowercase.
-With the same method, I also made the last name into lowercase to fully accomplish the main goal, which is converting names into lowercase. 
-For the final touch, I used the function **return**, to input "." between the first name and last name.
+● ```lower()``` - method converts all uppercase characters in a string to lowercase.
+
+This function is used for the first objective, which is to convert all letters to lowercase.
+
+● ```replace()``` - This function replaces occurences of a specified substring within a string to a new substring
+
+This function is used to remove the spaces in the substrings.
 
 ```
 def make_username(first_name, last_name):
@@ -58,7 +59,6 @@ def make_username(first_name, last_name):
     return username_first + "." + username_last
     
 ```
-And with that, I managed to solve the second problem.
 
 # **C. Bookends Swap Problem**
 
@@ -72,13 +72,16 @@ the list into three variables:
 Using these variables, return a new list in which the first and last elements have exchanged positions.
 The elements in middle must remain in their original order. Do not modify the input list.
 
-For this problem, this is easier than the second problem since this problem is like the first problem. The only difference
-that will make for this problem is that the first and last elements will only swap position while maintaining the second
-element in their own position. So for this, I just created a defined function again with the name "swap_bookends". 
-So after that, I indicated the format which is "first, *middle, last = items ". And for the main and final touch,
-I put a **return** function with putting first the "last" element inside the [] and putting "first" element as the last.
+The main function that is used for this problem is:
 
-so for the actual code, this is:
+● ```return``` - statement is used inside a function to send a value or result back to the code that called it.
+
+This problem is almost the same with first problem, but in this case, the two ends
+of the elements (first element, last element) should swap while maintaining the element/s between them.
+So, I used the return function to modify the sequence by putting the "[last]" element on first, and 
+"[first]" element on last.
+
+
 ```
 def swap_bookends(items):
     first, *middle, last = items
@@ -89,6 +92,11 @@ def swap_bookends(items):
 
 That's all for my first assignment about base computing with python. Thank you!!
 
+**README file version history:**
+
+August 26, 2026: Initial README output uploaded.
+
+August 30, 2026: Revied format README was uploaded.
 
 
 
