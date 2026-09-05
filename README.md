@@ -26,7 +26,7 @@ The main function for this problem is:
 In this case I input "text[1] + text[0]" so that the output will start at the 
 second letter while it will end with the supposedly first letter.
 
-```
+```python
 def rotate_word(text):
     return text [1:] + text[0]
 ```
@@ -52,7 +52,7 @@ This function is used for the first objective, which is to convert all letters t
 
 This function is used to remove the spaces in the substrings.
 
-```
+```python
 def make_username(first_name, last_name):
     username_first = first_name.lower().replace(" ", "")
     username_last = last_name.lower().replace(" ", "")
@@ -82,7 +82,7 @@ So, I used the return function to modify the sequence by putting the "[last]" el
 "[first]" element on last.
 
 
-```
+```python
 def swap_bookends(items):
     first, *middle, last = items
     return [last] + middle + [first]
@@ -97,6 +97,8 @@ That's all for my first assignment about base computing with python. Thank you!!
 August 26, 2026: Initial README output uploaded.
 
 August 30, 2026: Revied format README was uploaded.
+
+September 5, 2026:  python code example was enhanced.
 
 
 
