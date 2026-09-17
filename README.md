@@ -50,7 +50,8 @@ This function is used for the first objective, which is to convert all letters t
 
 ● ```replace()``` - This function replaces occurences of a specified substring within a string to a new substring
 
-This function is used to remove the spaces in the substrings.
+This function is used to remove the spaces in the substrings. So for the final
+output, it is:
 
 ```python
 def make_username(first_name, last_name):
@@ -59,6 +60,8 @@ def make_username(first_name, last_name):
     return username_first + "." + username_last
     
 ```
+With ```replace(" ", "")``` to remove the spaces for the element.
+So with that, the 'Username builder problem' is easily solved.
 
 # **C. Bookends Swap Problem**
 
@@ -99,6 +102,8 @@ August 26, 2026: Initial README output uploaded.
 August 30, 2026: Revied format README was uploaded.
 
 September 5, 2026:  python code example was enhanced.
+
+September 17, 2026:  Revised README was uploaded.
 
 
 
